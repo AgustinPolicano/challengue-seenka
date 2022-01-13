@@ -1,0 +1,20 @@
+<div class="dialog-container">
+  <div class="img-dialog-flex">
+    <img src={{userData.picture.large}} class="img-dialog">
+  </div>
+  <div>
+    <h2 class="user-text">{{userData.name.first}} {{userData.name.last}}</h2>
+  </div>
+  <div class="flex-dialog-text">
+    <div class="items"><mat-icon class="icon" color="accent">account_circle</mat-icon> <b>Gender:</b> {{userData.gender}}</div>
+    <div class="items"><mat-icon class="icon" color="accent">remove_red_eye</mat-icon> <b>Age:</b> {{userData.dob.age}}</div>
+    <div class="items"><mat-icon class="icon" color="accent">email</mat-icon> <b>Email:</b> {{userData.email}}</div>
+    <div class="items"><mat-icon class="icon" color="accent">phone_android</mat-icon> <b>Cell:</b> {{userData.cell}}</div>
+    <div class="items"><mat-icon class="icon" color="accent">device_hub</mat-icon> <b>Id Name:</b> {{userData.id.name}}</div>
+    <div class="items"><mat-icon class="icon" color="accent">location_city</mat-icon> <b>City:</b> {{userData.location.city}}</div>
+    <div class="items"><mat-icon class="icon" color="accent">person_pin_circle</mat-icon> <b>Username:</b> {{userData.login.username}}</div>
+    <div class="items"><mat-icon class="icon" color="accent">language</mat-icon> <b>Nat:</b> {{userData.nat}}</div>
+    <div class="items"><mat-icon class="icon" color="accent">date_range</mat-icon> <b>Registered Date:</b> {{userData.registered.date | date}}</div>
+
+  </div>
+</div>

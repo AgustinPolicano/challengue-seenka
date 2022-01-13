@@ -1,0 +1,8 @@
+<div class="grid-gallery">
+  <div *ngFor="let item of galleryData" class="">
+    <div class="bg-gallery">
+      <img src={{item.picture.large}}>
+      <button mat-raised-button class="button-dettails" (click)="openDialog(item)">Mas detalles</button>
+    </div>
+  </div>
+</div>
